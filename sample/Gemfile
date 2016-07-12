@@ -1,0 +1,5 @@
+# frozen_string_literal: true
+source "https://rubygems.org"
+
+gem 'microcon', git: 'https://github.com/davidpelaez/microcon.git'
+gem 'hanami-router', '~> 0.6.2'

@@ -12,3 +12,7 @@ require 'microcon/contextualizer'
 require 'microcon/result_types'
 require 'microcon/result_handlers'
 require 'microcon/controller'
+
+Oj.default_options = { symbol_keys: true, indent: 2,
+  mode: :compat, bigdecimal_as_decimal: true,
+  quirks_mode: false }

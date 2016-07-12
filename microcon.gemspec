@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["David Peláez"]
   spec.email         = ["pelaez89@gmail.com"]
   spec.summary       = "Small controller for JSON APIs"
-  spec.description   = spec.summary
+  spec.description   = "Most JSON APIs have a limited number of respondes or outcomes. Microcon tries to separate HTTP related concerns from business logic and removes most of the mental clutter regarding JSON parsing, rendering and consistent API responses."
   spec.homepage      = "https://github.com/davidpelaez/microcon"
   spec.license       = "MIT"
 

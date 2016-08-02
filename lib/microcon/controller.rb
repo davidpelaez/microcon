@@ -55,7 +55,7 @@ module Microcon
           # merge_fn = Dry::Monads::Maybe(-> x,y {x.merge(y)})
           # merge_fn * memo * obj
           #binding.pry
-          memo.bind {|m| obj.fmap {|o| m.merge(o)} }
+          memo.bind {|m| obj.fmap {|o| Functions[:deep_merge][m,o] } }
         end
       end
 

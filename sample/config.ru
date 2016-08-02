@@ -13,7 +13,7 @@ module Controllers
   module EchoContext
     include Microcon::Contextualizer
     contextualize_with do |headers:, params:, body:|
-      headers.merge(body).merge(params).merge contextualizer: self.to_s
+      headers.merge(body).merge(params).merge contextualizer: self.to_s, x: {a: 1}
     end
   end
 
@@ -21,6 +21,9 @@ module Controllers
     class Index < Microcon::Controller
       include Controllers::EchoContext
       process_with EchoOperation
+      contextualize_with do |headers:, params:, body:|
+        {x: {b: 2}}
+      end
     end
   end
 end

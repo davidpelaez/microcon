@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/davidpelaez/microcon.git
-  revision: 54ac66dcec4ebbcc754c8f01b60eda496471f81c
+  revision: c79939786f1089d207b77c2023ea091fb33be1a5
   specs:
     microcon (0.1)
       adts (~> 0.1.2)
@@ -15,7 +15,7 @@ GEM
   specs:
     adts (0.1.2)
     concurrent-ruby (1.0.2)
-    dry-configurable (0.1.6)
+    dry-configurable (0.1.7)
       concurrent-ruby (~> 1.0)
     dry-container (0.3.4)
       concurrent-ruby (~> 1.0)

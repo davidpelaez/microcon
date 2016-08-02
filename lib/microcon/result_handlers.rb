@@ -1,4 +1,4 @@
-require 'dry-container'
+
 #Core.finalize :base_controller do
 module Microcon
     class ResultHandlers
@@ -25,7 +25,7 @@ module Microcon
         {
           status: 422,
           body: {
-            error: :unprocessable_entity, reason: error.reason
+            error: :unprocessable_entity, reason: r.reason
           }
         }
       }
